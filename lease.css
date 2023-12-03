@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(36, 35, 35);
+    padding: auto;
+    margin: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+
+.form-container1 {
+    max-width: auto;
+    margin: auto;
+    background-color: #363535;
+}
+.form-group {
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input {
+    width: auto;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.form-group input:focus {
+    outline: none;
+    border-color: #7c5dff;
+}
+.form-group input[type="submit"] {
+    background-color: #3166b6;
+    color: #fff;
+    cursor: pointer;
+}
+.form-group input[type="submit"]:hover {
+    background-color: #2f74b4;
+}
+
+.signitures{
+    margin-left: 20px;
+}

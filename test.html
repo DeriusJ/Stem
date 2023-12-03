@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider</title>
+  <style>
+    #slider-container {
+      width: 70%;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    #image-slider {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slider-image {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+
+<div id="slider-container">
+  <div id="image-slider">
+    <img class="slider-image" src="img/home.png" alt="Image 1">
+    <img class="slider-image" src="img/r3.jpg" alt="Image 2">
+    <img class="slider-image" src="img/logo.jpg" alt="Image 3">
+    <img class="slider-image" src="img/home.png" alt="Image 1">
+    <img class="slider-image" src="img/r3.jpg" alt="Image 2">
+    <img class="slider-image" src="img/logo.jpg" alt="Image 3">
+    <img class="slider-image" src="img/home.png" alt="Image 1">
+    <img class="slider-image" src="img/r3.jpg" alt="Image 2">
+    <img class="slider-image" src="img/logo.jpg" alt="Image 3">
+    <img class="slider-image" src="img/home.png" alt="Image 1">
+    <img class="slider-image" src="img/r3.jpg" alt="Image 2">
+    <img class="slider-image" src="img/logo.jpg" alt="Image 3">
+    <!-- Add more images as needed -->
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+  $(document).ready(function() {
+    var currentIndex = 0;
+    var slider = $('#image-slider');
+    var images = $('.slider-image');
+    var imageCount = images.length;
+
+    // Function to show the next image
+    function showNextImage() {
+      currentIndex = (currentIndex + 1) % imageCount;
+      updateSlider();
+    }
+
+    // Function to show the previous image
+    function showPrevImage() {
+      currentIndex = (currentIndex - 1 + imageCount) % imageCount;
+      updateSlider();
+    }
+
+    // Function to update the slider position
+    function updateSlider() {
+      var newPosition = -currentIndex * 100 + '%';
+      slider.css('transform', 'translateX(' + newPosition + ')');
+    }
+
+    // Attach click events to the images
+    images.click(function() {
+      // You can customize this behavior as needed
+      // For now, let's just show the next image
+      showNextImage();
+    });
+
+    // You can also add buttons for next and previous
+    $('#slider-container').append('<button onclick="showPrevImage()">Previous</button>');
+    $('#slider-container').append('<button onclick="showNextImage()">Next</button>');
+  });
+</script>
+
+</body>
+</html>

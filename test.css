@@ -1,0 +1,261 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+.fa-2x {
+font-size: 2em;
+}
+
+
+.head{
+    background-color: rgb(9, 9, 10);
+    color: aliceblue;
+    position: fixed;
+    top: 0px;   
+    width: 100%;
+    text-align: center;
+   
+}
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto+Condensed");
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.bg{
+  background-image: url(img/commune.jpg);
+  background-position: cover;
+  background-size: 90%; 
+}
+
+
+
+
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E;
+}
+
+.whatsapp-logo {
+  width: 100px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.r1 {
+  background-color: #ffeee6;
+  padding: 1rem;
+  width: 100px;
+  border-radius: 12px;
+}
+.r3 {
+  background-color: #ffeee6;
+  padding: 1rem;
+  width: 100px;
+  border-radius: 12px;
+}
+.r2 {
+  background-color: #ffeee6;
+  padding: 1rem;
+  width: 100px;
+  border-radius: 12px;
+}
+
+.sidebar_footer img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.sidebar_footer h4 {
+  margin-bottom: 0;
+}
+
+.sidebar_footer p {
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #9b9b9b;
+}
+
+
+
+
+
+
+
+.toggle {
+    color:#3854af;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    text-decoration: none;
+    font-size: 2rem;
+    text-shadow: 1px 1px 10px hsla(30, 0%, 0%, 1);
+    transition: all .15s ease;
+    cursor: pointer;
+  
+  }
+  #nav-toggler{
+    display: none;
+  }
+  #nav-toggler:checked + .page-wrap .hidden-nav {
+    left:0px;
+  }
+  #nav-toggler:checked + .page-wrap .toggle {
+    left: 180px;
+  }
+  #nav-toggler:checked + .page-wrap .main-content {
+    padding-left: 0;
+    transform: scale(.7);
+    box-shadow: 0px 18px 25px -5px hsla(360, 0%, 0%, 0.9);
+  }
+  
+  .main-content{
+    position: relative;
+    z-index: 0;
+  }
+  .hidden-nav{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: -190px;
+    z-index: 0;
+    width: 160px;
+    padding: 20px;
+    background-color: #333;
+    transition: all .15s ease;
+  }
+  .hidden-nav ul{
+    list-style-type: none;
+    font-size: 15px;
+  }
+  .hidden-nav a, li {
+    color: #6f6f6f;
+    text-decoration: none;
+  }
+  .dont_show {display: hidden;}
+  
+  
+  .hidden-nav li {
+    margin-bottom: 1em;
+  }
+  .hidden-nav a:hover{
+    color: #e1f6f4;
+    transition: all .3s ease;
+  }
+  .hidden-nav img {
+    max-width: 120px;
+  }
+
+.main{
+    color: rgb(255, 255, 255);
+    padding-top: 130px;
+    padding-left: 80px;
+    border-radius: 10px;
+    background-color: rgb(34, 34, 36);
+    
+}
+
+img{
+    border-radius: 10px;
+}
+
+
+.sharing{
+    position: absolute;
+    left: 700px;
+    top: 274px;
+}
+
+.condo{
+    position: absolute;
+    left: 400px;
+    top: 274px;
+}
+
+.type-of-properties{
+    height: 20px;
+    background-color: aliceblue;
+}
+
+
+.search{
+    margin-left: 20px;
+}
+
+.opal{
+    display: block;
+    text-decoration: none;
+}
+
+
+.card {
+  width: 400px;
+ 
+  background: rgba(255, 255, 255);
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  
+}
+.card .title {
+  font-size: 2rem;
+  line-height: 1.2em;}
+
+.con{
+  justify-content: space-between;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  
+}
+
+.card > img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+ }
+
+
+
+
+
+
+.card-content > p {
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 18px;
+}
+
+@media (max-width: 900px) {
+  section {
+     grid-template-columns: repeat(4, 2fr);
+  }
+}
+
+@media (max-width: 500px) {
+  section {
+     grid-template-columns: repeat(2, 2fr);
+  }
+}
